@@ -7,7 +7,7 @@ var arch = process.arch === "ia32" ? "x86" : process.arch;
 var platform = process.platform === "win32" ? "win" : process.platform;
 
 // hack for m1 to use x86 with rosetta2
-if (arch === "arm64" && platform === "darwin") {
+if (arch === "arm64") {
   arch = "x64"
 }
 
